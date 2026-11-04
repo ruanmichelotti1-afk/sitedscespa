@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E💻%3C/text%3E%3C/svg%3E">
+<title>Desenvolvimento de Sistemas | CESPA — São Pedro Apóstolo</title>
+<meta name="description" content="Curso Técnico em Desenvolvimento de Sistemas, integrado ao Ensino Médio, do Colégio Estadual São Pedro Apóstolo (CESPA), Curitiba — PR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:"#081426",tech:"#1677FF",violet:"#8057E5",mist:"#F3F5F9"},fontFamily:{sans:["Inter","system-ui","sans-serif"],mono:["JetBrains Mono","monospace"]}}}}
+</script>
+<style>
+:root{box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;font-size:clamp(15px,.3vw + 12px,19px);-webkit-text-size-adjust:100%}
+body{background:#fff;color:#081426;font-family:Inter,system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+img,svg{max-width:100%}
+section[id]{scroll-margin-top:4.5rem}
+:focus-visible{outline:3px solid #1677FF;outline-offset:3px}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:44px 44px}
+.rv{opacity:0;translate:0 20px;transition:opacity .6s ease-out,translate .6s ease-out,transform .3s,border-color .3s,box-shadow .3s}.rv.in{opacity:1;translate:0 0}
+.no-js .rv{opacity:1;translate:none}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:20px;box-shadow:0 10px 30px -12px rgba(8,20,38,.18);transition:transform .3s,border-color .3s,box-shadow .3s,opacity .6s ease-out,translate .6s ease-out}
+.card:hover{transform:translateY(-4px);border-color:rgba(22,119,255,.4)}
+.ic{display:flex;flex:none;height:44px;width:44px;align-items:center;justify-content:center;border-radius:14px;background:linear-gradient(135deg,#1677FF,#8057E5);font-size:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 20px;font-size:.95rem;font-weight:600;transition:transform .3s,background-color .3s}
+.btn:hover{transform:translateY(-2px)}
+.note{margin-top:32px;border:1px solid rgba(22,119,255,.2);background:rgba(22,119,255,.05);border-radius:16px;padding:16px 20px;font-size:13px;line-height:1.55;color:#475569}
+.dk .note{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:#cbd5e1}
+details[open]{border-color:rgba(22,119,255,.4)}
+summary{list-style:none}summary::-webkit-details-marker{display:none}
+details summary span{transition:transform .2s}details[open] summary span{transform:rotate(180deg)}
+@keyframes fl{50%{transform:translateY(-10px)}}.fl{animation:fl 6s ease-in-out infinite}
+@keyframes bl{50%{opacity:0}}.bl{animation:bl 1s steps(1) infinite}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-navy">Ir para o conteúdo</a>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur" style="padding-top:env(safe-area-inset-top,0px)">
+ <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6">
+  <a href="#inicio" class="flex items-center gap-3"><span class="ic !h-10 !w-10 !rounded-xl text-white font-mono text-base">&lt;/&gt;</span>
+   <span class="leading-tight"><span class="block text-sm font-bold text-white">Desenvolvimento de Sistemas</span><span class="block text-xs text-slate-400">CESPA — São Pedro Apóstolo</span></span></a>
+  <nav class="hidden xl:block" aria-label="Principal"><ul id="nav" class="flex gap-0.5"></ul></nav>
+  <button id="mb" class="p-2 text-2xl text-white xl:hidden" aria-expanded="false" aria-controls="mm" aria-label="Abrir menu">☰</button>
+ </div>
+ <nav id="mm" class="hidden max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-white/10 bg-navy xl:hidden" aria-label="Menu mobile"><ul id="nav2" class="mx-auto max-w-7xl px-4 sm:px-6 py-3"></ul></nav>
+</header>
+
+<main id="conteudo">
+<section id="inicio" class="grid-bg relative overflow-hidden bg-navy text-white">
+ <div class="pointer-events-none absolute -left-32 top-0 h-72 w-72 rounded-full bg-tech/30 blur-[120px]"></div>
+ <div class="pointer-events-none absolute -right-32 bottom-0 h-72 w-72 rounded-full bg-violet/30 blur-[120px]"></div>
+ <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-2 lg:py-20">
+  <div class="min-w-0">
+   <p class="inline-flex rounded-full border border-white/15 bg-white/5 px-3.5 py-1 text-xs text-slate-300 sm:text-sm">Técnico em Desenvolvimento de Sistemas · CESPA</p>
+   <h1 class="mt-5 text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl xl:text-6xl">TRANSFORME IDEIAS EM TECNOLOGIA.</h1>
+   <p class="mt-5 max-w-xl text-base leading-relaxed text-slate-300">Conheça o Técnico em Desenvolvimento de Sistemas do Colégio Estadual São Pedro Apóstolo e descubra como a programação pode transformar o futuro.</p>
+   <div class="mt-7 flex flex-wrap gap-3">
+    <a href="#sobre" class="btn bg-gradient-to-r from-tech to-violet text-white shadow-lg shadow-tech/30">Conheça o curso →</a>
+    <a href="#areas" class="btn border border-white/30 text-white hover:bg-white/10">Explore as áreas de tecnologia</a>
+   </div>
+   <blockquote class="mt-8 border-l-4 border-violet pl-4 text-slate-300">O futuro é construído por quem aprende a desenvolver soluções.</blockquote>
+  </div>
+  <div class="relative min-w-0">
+   <div class="rounded-2xl border border-white/10 bg-[#0c1c33] shadow-2xl shadow-tech/20" role="img" aria-label="Ilustração de um editor de código">
+    <div class="flex items-center gap-2 border-b border-white/10 px-4 py-3"><i class="h-3 w-3 rounded-full bg-red-400"></i><i class="h-3 w-3 rounded-full bg-yellow-400"></i><i class="h-3 w-3 rounded-full bg-green-400"></i><span class="ml-3 font-mono text-xs text-slate-400">futuro.js</span></div>
+    <pre class="overflow-x-auto p-4 font-mono text-xs leading-6 sm:text-[13px] sm:leading-7 text-slate-300" aria-hidden="true"><span class="text-violet">function</span> <span class="text-sky-300">criarSolucao</span>(ideia) {
+  <span class="text-violet">const</span> logica = <span class="text-sky-300">pensar</span>(ideia);
+  <span class="text-violet">const</span> sistema = <span class="text-sky-300">programar</span>(logica);
+  <span class="text-violet">return</span> <span class="text-sky-300">testar</span>(sistema);
+}
+
+<span class="text-slate-500">// seu futuro começa aqui</span>
+<span class="text-sky-300">criarSolucao</span>(<span class="text-emerald-300">"sua ideia"</span>)<span class="bl">▍</span></pre>
+   </div>
+   <div class="fl absolute -left-4 -top-6 hidden rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-navy shadow-xl sm:block">📱 App</div>
+   <div class="absolute -bottom-6 -right-2 hidden rounded-2xl bg-gradient-to-r from-tech to-violet px-4 py-3 text-sm font-semibold text-white shadow-xl sm:block">⚙️ Sistemas</div>
+  </div>
+ </div>
+</section>
+
+<section id="sobre" class="bg-mist py-12 sm:py-16 lg:py-20"><div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12">
+ <div class="rv"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Sobre o curso</h2>
+  <p class="mt-4 text-base leading-relaxed text-slate-600">O curso Técnico em Desenvolvimento de Sistemas pertence ao eixo tecnológico de Informação e Comunicação e prepara estudantes para compreender, planejar, desenvolver, testar e manter sistemas computacionais e aplicações digitais.</p>
+  <p class="mt-3 text-base leading-relaxed text-slate-600">A formação aproxima os estudantes do universo da tecnologia, desenvolvendo raciocínio lógico, pensamento computacional, resolução de problemas e capacidade de transformar ideias em soluções digitais.</p></div>
+ <dl id="facts" class="rv divide-y divide-slate-100 rounded-2xl bg-white p-1.5 shadow-lg"></dl>
+</div></section>
+
+<section id="aprende" class="py-12 sm:py-16 lg:py-20"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8 max-w-2xl"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">O que você aprende</h2><p class="mt-3 text-base text-slate-600">Áreas de conhecimento da profissão de desenvolvimento de sistemas.</p></div>
+ <div id="learn" class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4"></div>
+ <p class="note">Estes temas descrevem a área de atuação e não representam, necessariamente, a matriz curricular do CESPA. <strong>Matriz curricular oficial: espaço reservado para atualização futura.</strong></p>
+ <div class="mt-14" id="tecnologias">
+  <div class="rv mb-8 max-w-2xl"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Linguagens e tecnologias do mercado</h2><p class="mt-3 text-base text-slate-600">Exemplos de ferramentas usadas na área de desenvolvimento de software.</p></div>
+  <ul id="techs" class="grid grid-cols-2 gap-4 sm:grid-cols-4"></ul>
+  <p class="note">São tecnologias e exemplos de ferramentas do mercado, não uma lista de linguagens obrigatoriamente ensinadas no CESPA. (Nesta pré-visualização os logotipos aparecem como siglas; no projeto React são os logotipos oficiais.)</p>
+ </div>
+</div></section>
+
+<section id="areas" class="bg-mist py-12 sm:py-16 lg:py-20"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8 max-w-2xl"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Áreas de atuação</h2><p class="mt-3 text-base text-slate-600">Onde um profissional formado em Desenvolvimento de Sistemas pode trabalhar.</p></div>
+ <div id="roles" class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4"></div>
+</div></section>
+
+<section id="projetos" class="dk bg-navy py-20 text-white sm:py-24"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8 max-w-2xl"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Da ideia ao código</h2><p class="mt-3 text-base text-slate-300">Exemplos de projetos que estudantes da área de Desenvolvimento de Sistemas podem desenvolver.</p></div>
+ <div id="projs" class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3"></div>
+ <p class="note">Ilustrações e mockups representativos. São exemplos de projetos da área, não projetos necessariamente realizados pelos estudantes do CESPA.</p>
+</div></section>
+
+<section id="mercado" class="py-12 sm:py-16 lg:py-20"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8 max-w-2xl"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Mercado de trabalho</h2><p class="mt-3 text-base text-slate-600">Profissionais de tecnologia ajudam organizações a criar e manter as soluções digitais que sustentam o dia a dia.</p></div>
+ <div id="market" class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3"></div>
+</div></section>
+
+<section id="escola" class="bg-mist py-12 sm:py-16 lg:py-20"><div class="mx-auto max-w-4xl px-4 sm:px-6">
+ <div class="rv"><span class="ic">🏫</span><h2 class="mt-5 text-2xl font-extrabold tracking-tight sm:text-3xl">Sobre o CESPA</h2>
+  <p class="mt-3 text-base font-semibold">Colégio Estadual São Pedro Apóstolo — Ensino Fundamental, Médio e Profissional</p>
+  <p class="mt-4 leading-relaxed text-slate-600">O CESPA faz parte da rede pública estadual de ensino do Paraná e atua em diferentes etapas da educação, do Ensino Fundamental ao Médio, com oferta de formação profissional técnica.</p>
+  <p class="mt-4 text-slate-600">📍 Rua Primeiro de Maio, 1160, Bairro Xaxim, Curitiba — PR</p><p class="mt-2 text-slate-600">📞 (41) 3346-8989</p></div>
+</div></section>
+
+<section id="faq" class="py-12 sm:py-16 lg:py-20"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Perguntas frequentes</h2></div>
+ <div id="faqs" class="mx-auto max-w-3xl space-y-3"></div>
+</div></section>
+
+<section id="contato" class="dk bg-navy py-20 text-white sm:py-24"><div class="mx-auto max-w-7xl px-4 sm:px-6">
+ <div class="rv mb-8"><h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Contato e localização</h2></div>
+ <div class="grid gap-5 lg:grid-cols-2">
+  <div class="rv rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-7"><h3 class="text-lg font-bold">Colégio Estadual São Pedro Apóstolo — Ensino Fundamental, Médio e Profissional</h3>
+   <p class="mt-4 text-slate-300">📍 Rua Primeiro de Maio, 1160, Bairro Xaxim, Curitiba — PR</p>
+   <p class="mt-3 text-slate-300">📞 <a class="underline-offset-4 hover:underline" href="tel:+554133468989">(41) 3346-8989</a></p>
+   <a class="btn mt-6 bg-gradient-to-r from-tech to-violet text-white" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Primeiro+de+Maio+1160+Curitiba+PR">Abrir no Google Maps ↗</a></div>
+  <div class="rv rounded-2xl border-2 border-dashed border-white/25 p-6 sm:p-7"><h3 class="text-lg font-bold">Matrículas</h3>
+   <p class="mt-4 leading-relaxed text-slate-300">Informações oficiais sobre matrículas: espaço reservado para atualização futura. Enquanto isso, consulte diretamente a escola pelo telefone (41) 3346-8989.</p></div>
+ </div>
+</div></section>
+</main>
+
+<footer class="bg-[#050d19] text-slate-400"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
+ <div><p class="font-bold text-white">Desenvolvimento de Sistemas</p><p class="text-xs">CESPA — São Pedro Apóstolo</p>
+  <p class="mt-5 text-sm leading-relaxed">Colégio Estadual São Pedro Apóstolo — Ensino Fundamental, Médio e Profissional</p>
+  <p class="mt-4 font-medium text-slate-200">O conhecimento é o primeiro passo para desenvolver o futuro.</p></div>
+ <nav aria-label="Rodapé"><h2 class="mb-3 font-semibold text-white">Navegação</h2><ul id="nav3" class="grid grid-cols-2 gap-2 text-sm"></ul></nav>
+ <div class="text-sm leading-relaxed"><h2 class="mb-3 font-semibold text-white">Endereço e telefone</h2><address class="not-italic"><p>Rua Primeiro de Maio, 1160, Bairro Xaxim, Curitiba — PR</p><p class="mt-2"><a class="hover:text-white" href="tel:+554133468989">(41) 3346-8989</a></p></address></div>
+</div><div class="border-t border-white/10 py-5 text-center text-xs">© <span id="yr"></span> Desenvolvimento de Sistemas — CESPA. Todos os direitos reservados.</div></footer>
+
+<script>
+document.documentElement.classList.remove("no-js");
+const $=id=>document.getElementById(id);
+const NAV=[["Início","#inicio"],["Sobre o curso","#sobre"],["O que você aprende","#aprende"],["Áreas de atuação","#areas"],["Projetos","#projetos"],["Mercado de trabalho","#mercado"],["Sobre a escola","#escola"],["Contato","#contato"]];
+const FACTS=[["Instituição","Colégio Estadual São Pedro Apóstolo"],["Sigla","CESPA"],["Curso","Técnico em Desenvolvimento de Sistemas"],["Eixo tecnológico","Informação e Comunicação"],["Modalidade","Integrado ao Ensino Médio"],["Formato","Presencial, com possibilidade de até 20% de atividades escolares não presenciais no período diurno, conforme regulamentação."],["Reconhecimento","Parecer CEE/CEMEP nº 246/2025, aprovado em 07/04/2025"]];
+const LEARN=[["⌨️","Lógica de Programação","Entendimento de algoritmos, estruturas lógicas e resolução de problemas."],["🌐","Desenvolvimento Web","Criação de páginas, interfaces e aplicações para a internet."],["🗄️","Banco de Dados","Organização, armazenamento, consulta e gerenciamento de informações."],["💻","Programação","Conhecimento de linguagens e ferramentas utilizadas na criação de sistemas."],["📋","Análise de Sistemas","Compreensão das necessidades dos usuários e planejamento de soluções."],["🔍","Testes e Manutenção","Identificação de erros, melhoria de desempenho e manutenção de aplicações."],["🎨","Interface e Experiência do Usuário","Desenvolvimento de interfaces intuitivas, funcionais e acessíveis."],["🗂️","Projetos de Software","Planejamento, organização e desenvolvimento de soluções tecnológicas."]];
+const TECHS=[["HTML5","#E34F26","H5","#fff"],["CSS3","#1572B6","C3","#fff"],["JavaScript","#F7DF1E","JS","#081426"],["Python","#3776AB","Py","#fff"],["Java","#ED8B00","Jv","#081426"],["SQL","#336791","SQL","#fff"],["Git e GitHub","#F05032","Git","#fff"],["React","#61DAFB","Re","#081426"]];
+const ROLES=[["🖥️","Desenvolvedor Front-end","Interfaces que o usuário vê e usa.","Constrói páginas e telas responsivas, cuidando de visual, acessibilidade e desempenho no navegador."],["🛠️","Desenvolvedor Back-end","A lógica por trás dos sistemas.","Cria regras de negócio, APIs e integrações com bancos de dados, garantindo segurança e estabilidade."],["🧩","Desenvolvedor Full Stack","Do visual ao servidor.","Atua tanto no front-end quanto no back-end, conduzindo uma funcionalidade de ponta a ponta."],["📱","Desenvolvedor de Aplicativos","Soluções para celulares e tablets.","Desenvolve aplicativos móveis que levam serviços e informações para a palma da mão."],["📋","Analista de Sistemas","A ponte entre necessidade e solução.","Levanta requisitos com os usuários, modela processos e planeja como o sistema deve funcionar."],["💻","Desenvolvedor de Software","Programas e sistemas sob medida.","Projeta, escreve, testa e mantém software para empresas, serviços e produtos digitais."],["🗄️","Administrador de Banco de Dados","Guardião das informações.","Organiza, protege e otimiza os dados que alimentam os sistemas de uma organização."],["✅","Testador de Software (QA)","Qualidade antes do lançamento.","Planeja e executa testes para encontrar falhas e garantir que o sistema funcione como esperado."]];
+const MARKET=[["📈","Transformação digital","Organizações de todos os setores revisam seus processos e serviços para o meio digital."],["📲","Sistemas e aplicativos","Cresce a necessidade de sistemas, sites e aplicativos para atender pessoas e empresas."],["🏢","Digitalização de empresas","Do pequeno comércio à grande indústria, negócios migram controles e atendimento para plataformas digitais."],["☁️","Plataformas e serviços","Serviços online exigem profissionais para criar, evoluir e manter plataformas."],["🔄","Automação de processos","Tarefas repetitivas são automatizadas com software, liberando tempo para o que exige decisão humana."],["🚀","Empresas, startups e projetos próprios","O profissional pode atuar em empresas, em startups ou desenvolver projetos independentes."]];
+const PROJS=[["🌐","Sites institucionais","Apresentam uma organização, seus serviços e canais de contato."],["📋","Sistemas de cadastro","Registram e consultam pessoas, produtos ou atendimentos."],["📱","Aplicativos","Telas e funções pensadas para o uso no celular."],["📊","Sistemas de gerenciamento","Painéis para acompanhar tarefas, equipes e resultados."],["🎓","Plataformas educacionais","Ambientes para organizar conteúdos, atividades e aprendizagem."],["📦","Controle de estoque","Entradas, saídas e saldo de produtos em um só lugar."]];
+const FAQ=[["O que é Desenvolvimento de Sistemas?","É a área da tecnologia que planeja, desenvolve, testa e mantém sistemas computacionais e aplicações digitais. O curso pertence ao eixo tecnológico de Informação e Comunicação."],["O que faz um profissional da área?","Transforma necessidades em soluções digitais: analisa problemas, escreve código, organiza dados, testa e mantém sites, sistemas e aplicativos."],["Preciso saber programar antes de começar?","As informações oficiais disponíveis não indicam esse requisito. Para detalhes sobre ingresso, consulte diretamente o CESPA."],["Quais tecnologias fazem parte do mercado?","Exemplos comuns são HTML, CSS, JavaScript, Python, Java, SQL, Git e GitHub e React. Elas ilustram o mercado e não são uma lista confirmada de conteúdos do CESPA."],["O curso é integrado ao Ensino Médio?","Sim. A modalidade é Integrada ao Ensino Médio, em formato presencial, com possibilidade de até 20% de atividades escolares não presenciais no período diurno, conforme regulamentação."],["Quais são as possibilidades profissionais?","Front-end, back-end, full stack, aplicativos, análise de sistemas, desenvolvimento de software, banco de dados e testes de software (QA), entre outras."],["Onde posso obter informações sobre matrículas?","Diretamente com a escola, pelo telefone (41) 3346-8989 ou presencialmente, e nos canais oficiais da rede estadual de ensino do Paraná."],["Como entrar em contato com o CESPA?","Por telefone, (41) 3346-8989, ou na Rua Primeiro de Maio, 1160, Bairro Xaxim, Curitiba — PR."]];
+
+const card=([i,t,x,e])=>`<article class="card rv h-full"><span class="ic">${i}</span><h3 class="mt-4 text-base font-bold">${t}</h3><p class="mt-1.5 text-sm leading-relaxed text-slate-600">${x}</p>${e?`<p class="mt-3 border-t border-slate-100 pt-3 text-[13px] leading-relaxed text-slate-500">${e}</p>`:""}</article>`;
+$("nav").innerHTML=NAV.map(([l,h])=>`<li><a href="${h}" class="rounded-full px-2.5 py-1.5 text-[13px] text-slate-300 hover:bg-white/10 hover:text-white">${l}</a></li>`).join("");
+$("nav2").innerHTML=NAV.map(([l,h])=>`<li><a href="${h}" class="block rounded-lg px-3 py-3 text-slate-200 hover:bg-white/10">${l}</a></li>`).join("");
+$("nav3").innerHTML=NAV.map(([l,h])=>`<li><a class="hover:text-white" href="${h}">${l}</a></li>`).join("");
+$("facts").innerHTML=FACTS.map(([k,v])=>`<div class="grid gap-1 px-4 py-3 text-sm sm:grid-cols-[140px_1fr]"><dt class="text-sm font-semibold text-tech">${k}</dt><dd class="leading-relaxed">${v}</dd></div>`).join("");
+$("learn").innerHTML=LEARN.map(card).join("");
+$("roles").innerHTML=ROLES.map(card).join("");
+$("market").innerHTML=MARKET.map(card).join("");
+$("techs").innerHTML=TECHS.map(([n,c,a,t])=>`<li class="rv flex flex-col items-center gap-2.5 rounded-2xl border border-slate-200 bg-mist p-4 text-center text-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-5"><span class="flex h-11 w-11 items-center justify-center rounded-xl font-mono text-sm font-bold" style="background:${c};color:${t}">${a}</span><span class="font-semibold">${n}</span></li>`).join("");
+$("projs").innerHTML=PROJS.map(([i,t,x])=>`<article class="rv h-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-tech/50"><div class="m-3 rounded-xl bg-[#0c1c33] p-3" aria-hidden="true"><div class="mb-3 flex gap-1.5"><i class="h-2 w-2 rounded-full bg-white/30"></i><i class="h-2 w-2 rounded-full bg-white/30"></i><i class="h-2 w-2 rounded-full bg-white/30"></i></div><div class="flex gap-3"><div class="w-1/4 space-y-2"><i class="block h-2 rounded bg-white/15"></i><i class="block h-2 rounded bg-white/10"></i><i class="block h-2 rounded bg-white/10"></i></div><div class="flex-1 space-y-2"><div class="flex h-14 items-center justify-center rounded-lg bg-gradient-to-br from-tech/40 to-violet/40 text-3xl">${i}</div><i class="block h-2 w-3/4 rounded bg-white/15"></i><i class="block h-2 w-1/2 rounded bg-white/10"></i></div></div></div><div class="px-5 pb-5"><h3 class="text-base font-bold">${t}</h3><p class="mt-1.5 text-sm text-slate-300">${x}</p></div></article>`).join("");
+$("faqs").innerHTML=FAQ.map(([q,a])=>`<details class="rv rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-[15px] shadow-md"><summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold">${q}<span aria-hidden="true" class="shrink-0">▾</span></summary><p class="mt-2.5 text-sm leading-relaxed text-slate-600">${a}</p></details>`).join("");
+$("yr").textContent=new Date().getFullYear();
+const mb=$("mb"),mm=$("mm");
+const tog=o=>{mm.classList.toggle("hidden",!o);mb.setAttribute("aria-expanded",o);mb.textContent=o?"✕":"☰";mb.setAttribute("aria-label",o?"Fechar menu":"Abrir menu")};
+mb.onclick=()=>tog(mm.classList.contains("hidden"));
+mm.querySelectorAll("a").forEach(a=>a.onclick=()=>tog(false));
+addEventListener("keydown",e=>e.key==="Escape"&&tog(false));
+matchMedia("(min-width:1280px)").addEventListener("change",e=>e.matches&&tog(false));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
